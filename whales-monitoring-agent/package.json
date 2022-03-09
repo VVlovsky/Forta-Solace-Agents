@@ -1,7 +1,7 @@
 {
-  "name": "solace-whal-monitoring-agent",
+  "name": "solace-whales-monitoring-agent",
   "version": "0.0.1",
-  "description": "Solace Whale Monitoring Agent",
+  "description": "Solace Whales Monitoring Agent",
   "scripts": {
     "postinstall": "python3 -m pip install -r requirements_dev.txt",
     "start": "npm run start:dev",
