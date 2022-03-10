@@ -1,6 +1,4 @@
 import json
-from pprint import pprint
-
 import forta_agent
 from forta_agent import Finding, FindingType, FindingSeverity
 from src.constants import STAKINGREWARDS_CONTRACT
@@ -56,7 +54,6 @@ def handle_transaction(transaction_event: forta_agent.transaction_event.Transact
 
     # emit the alerts for the functions
     for function in functions:
-        pprint(function)
         findings.append(Finding({
             'name': 'StakingRewards Function Alert',
             'description': f'Contract function {function[0].fn_name} was called',
